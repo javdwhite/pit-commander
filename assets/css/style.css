@@ -1,0 +1,231 @@
+/* ---------------Box Sizing----------------- */
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+/* --------------Responsive Images ---------------- */
+
+
+img{
+  max-width: 100%;
+}
+
+/* --------------Utility Classes ---------------- */
+
+.container{
+  max-width: 960px;
+  width: 80vw;
+  margin: 20px auto;
+}
+
+.img-right{
+  float:right;
+  margin: 10px 0 10px 20px;
+  border: 5px solid #fff;
+  max-width: 33%;
+}
+.img-left{
+  float:left;
+  margin: 10px 20px 10px 0px;
+  border: 5px solid #fff;
+  max-width: 33%;
+}
+.img-center{
+  display:block;
+  margin: 20px auto;
+  border: 5px solid #fff;
+}
+
+
+/* Skip link utility: hidden until focused */
+.visually-hidden {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+/* Make skip link visible when keyboard users tab to it */
+.visually-hidden:focus,
+.visually-hidden:focus-visible {
+  clip: auto;
+  height: auto;
+  width: auto;
+  margin: 0;
+  padding: 10px 14px;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  background: #ffffff;
+  color: #172635;
+  z-index: 9999;
+  border-radius: 6px;
+}
+
+/* Font Styles */
+
+.permanent-marker-regular {
+  font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+/*----------------------Global Styles--------------------*/
+
+
+body {
+  font-family: "Share Tech", sans-serif;
+  margin:0;
+  
+}
+p{
+  color:white;
+  font-size: 1.1rem;
+}
+header.primary {
+  color: #ffffff;
+  text-align: center;
+  text-shadow: -2px 2px black;
+  background-color: #000; 
+  padding: 25px 20px 1px 20px;
+}
+header.primary a{
+  color: white;
+  text-decoration: none;
+}
+header.primary h1{
+  font-size: 3rem;
+  margin:0;
+}
+header.primary h1{
+   text-shadow: 2px 2px red;
+
+}
+header.primary h1 a:hover{
+  text-shadow: none;
+}
+header.primary p.subtitle{
+  font-size: 1.3rem;
+  margin: 10px 0 20px;
+  letter-spacing: 2px;
+}
+nav.primary ul{
+  margin-top: 30px;
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 1.5rem;
+  gap: 40px;
+  border-top: 2px red solid;
+}
+nav.primary ul li{
+  list-style-type: none;
+  flex: 1;
+}
+nav.primary ul li a{
+  background-color: rgba(0, 0, 0, .15);
+  padding: 10px 20px 0 20px;
+  border-radius: 40px;
+  display:block;
+}
+nav.primary ul li a:hover{
+  text-decoration: underline;
+}
+#content h2{
+  color:#000;
+  text-align:center;
+  padding-bottom: 20px;
+  border-bottom: 8px solid #000;
+}
+
+#content p{
+  line-height: 1.4;
+  color:#000;
+  padding: 10px;
+}
+
+#blog{
+  border-bottom: 8px dashed #ffa94f;
+  padding-bottom: 30px;
+}
+
+
+
+#blog article.post{
+  box-shadow:7px 7px 7px 7px rgba(0, 0, 0, .4);
+  padding:10px;
+  font-size: .8rem;
+  width: fit-content;
+  margin:0 auto;
+}
+
+figure.GFS img{ 
+  padding-bottom: 10px;;
+  display: block;
+}
+article.post time{
+  text-transform: capitalize;
+  font-size: .8rem;
+}
+article.post time, article.post figcaption{
+  text-transform: uppercase;
+  font-size: .8rem;
+  text-align:center;
+}
+
+
+footer.primary{
+  display:block;
+  margin:0;
+  padding-top: 20px;
+  background-color: #000;
+  color:red;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='%23000' fill-opacity='0.91'%3E%3Cpath fill-rule='evenodd' d='M0 0h40v40H0V0zm40 40h40v40H40V40zm0-40h2l-2 2V0zm0 4l4-4h2l-6 6V4zm0 4l8-8h2L40 10V8zm0 4L52 0h2L40 14v-2zm0 4L56 0h2L40 18v-2zm0 4L60 0h2L40 22v-2zm0 4L64 0h2L40 26v-2zm0 4L68 0h2L40 30v-2zm0 4L72 0h2L40 34v-2zm0 4L76 0h2L40 38v-2zm0 4L80 0v2L42 40h-2zm4 0L80 4v2L46 40h-2zm4 0L80 8v2L50 40h-2zm4 0l28-28v2L54 40h-2zm4 0l24-24v2L58 40h-2zm4 0l20-20v2L62 40h-2zm4 0l16-16v2L66 40h-2zm4 0l12-12v2L70 40h-2zm4 0l8-8v2l-6 6h-2zm4 0l4-4v2l-2 2h-2z'/%3E%3C/g%3E%3C/svg%3E");
+}
+footer.primary a.social svg{
+  width:24px;
+  height:24px;
+  fill:blue
+
+}
+footer.primary p{
+  color:red;
+  margin:0;
+}
+
+
+
+
+
+
+
+
+/* Media Queries */
+
+@media screen and (max-width:600px) {
+
+
+  nav.primary ul{
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 15px;
+  }
+  nav.primary ul li{
+    width:100%;
+  }
+  
+  nav.primary a{
+    display:block;
+  }
+}
