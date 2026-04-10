@@ -22,53 +22,12 @@ img{
   margin: 20px auto;
 }
 
-.img-right{
-  float:right;
-  margin: 10px 0 10px 20px;
-  border: 5px solid #fff;
-  max-width: 33%;
-}
-.img-left{
-  float:left;
-  margin: 10px 20px 10px 0px;
-  border: 5px solid #fff;
-  max-width: 33%;
-}
-.img-center{
-  display:block;
-  margin: 20px auto;
-  border: 5px solid #fff;
-}
-
-
-/* Skip link utility: hidden until focused */
-.visually-hidden {
-  border: 0;
-  clip: rect(0, 0, 0, 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-}
-
-/* Make skip link visible when keyboard users tab to it */
-.visually-hidden:focus,
-.visually-hidden:focus-visible {
-  clip: auto;
-  height: auto;
-  width: auto;
-  margin: 0;
-  padding: 10px 14px;
-  position: absolute;
-  left: 10px;
-  top: 10px;
-  background: #ffffff;
-  color: #172635;
-  z-index: 9999;
-  border-radius: 6px;
+.subheader{
+  color:#000;
+  font-size: 2rem;
+  text-align:center;
+  padding-bottom: 20px;
+  border-bottom: 8px solid #000;
 }
 
 /* Font Styles */
@@ -88,10 +47,8 @@ body {
   margin:0;
   
 }
-p{
-  color:white;
-  font-size: 1.1rem;
-}
+
+/* Header and Primary Nav */
 header.primary {
   color: #ffffff;
   text-align: center;
@@ -138,7 +95,7 @@ nav.primary ul {
 }
 
 nav.primary ul li {
-  flex: 1; /* prevents stretching */
+  flex: 1;
 }
 
 nav.primary ul li a {
@@ -156,13 +113,7 @@ nav.primary ul li a:hover{
   border-radius:30px
 }
 
-.subheader{
-  color:#000;
-  font-size: 2rem;
-  text-align:center;
-  padding-bottom: 20px;
-  border-bottom: 8px solid #000;
-}
+/* Food */
 
 .food-imgs {
   display: flex;
@@ -202,40 +153,41 @@ nav.primary ul li a:hover{
 
 
 
-
-#blog p{
+/* Past Sales */
+#past-sales p{
   line-height: 1.4;
   color:#000;
   padding: 10px;
 }
 
-#blog{
+#past-sales{
   padding-bottom: 30px;
 }
-
-
-
-#blog article.post{
+#past-sales div.sale{
   box-shadow:7px 7px 7px 7px rgba(0, 0, 0, .4);
   padding:10px;
   font-size: .8rem;
   width: fit-content;
   margin:0 auto;
 }
-
-figure.GFS img{ 
-  padding-bottom: 10px;;
-  display: block;
-}
-article.post time{
+div.sale time{
   text-transform: capitalize;
   font-size: .8rem;
 }
-article.post time, article.post figcaption{
+div.sale time, div.sale figcaption{
   text-transform: uppercase;
   font-size: 1.2rem;
   text-align:center;
 }
+figure.GFS img{ 
+  padding-bottom: 10px;;
+  display: block;
+}
+
+
+/* Footer */
+
+
 
 
 footer.primary {
@@ -251,14 +203,13 @@ footer.primary {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='%23000' fill-opacity='0.91'%3E%3Cpath fill-rule='evenodd' d='M0 0h40v40H0V0zm40 40h40v40H40V40zm0-40h2l-2 2V0zm0 4l4-4h2l-6 6V4zm0 4l8-8h2L40 10V8zm0 4L52 0h2L40 14v-2zm0 4L56 0h2L40 18v-2zm0 4L60 0h2L40 22v-2zm0 4L64 0h2L40 26v-2zm0 4L68 0h2L40 30v-2zm0 4L72 0h2L40 34v-2zm0 4L76 0h2L40 38v-2zm0 4L80 0v2L42 40h-2zm4 0L80 4v2L46 40h-2zm4 0L80 8v2L50 40h-2zm4 0l28-28v2L54 40h-2zm4 0l24-24v2L58 40h-2zm4 0l20-20v2L62 40h-2zm4 0l16-16v2L66 40h-2zm4 0l12-12v2L70 40h-2zm4 0l8-8v2l-6 6h-2zm4 0l4-4v2l-2 2h-2z'/%3E%3C/g%3E%3C/svg%3E");
 }
 
-/* Heading */
 footer.primary h3 {
   margin: 0;
   color: red;
   font-size: 2rem;
 }
 
-/* Social icon link */
+/* Social Logo Links */
 footer.primary .social-row {
   display: flex;
   gap: 15px;
