@@ -295,6 +295,7 @@ footer.primary p {
   nav.primary ul{
   flex-direction: column;
   justify-content: space-around;
+  align-items: center;
   gap: 15px;
   }
   nav.primary ul li{
@@ -305,7 +306,7 @@ footer.primary p {
     display:block;
   }
   footer.primary p{
-    left:0;
+    left:10px;
     bottom: 0;
   }
 }
