@@ -134,29 +134,67 @@ nav.primary ul li{
   flex: 1;
 }
 nav.primary ul li a{
-  background-color: rgba(0, 0, 0, .15);
+  text-shadow: .5px .5px red;
   padding: 10px 20px 0 20px;
   border-radius: 40px;
   display:block;
 }
 nav.primary ul li a:hover{
-  text-decoration: underline;
+  text-shadow:none;
 }
-#content h2{
+.subheader{
   color:#000;
   text-align:center;
   padding-bottom: 20px;
   border-bottom: 8px solid #000;
 }
 
-#content p{
+.food-imgs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.food-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.food-item img {
+  width: 220px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+}
+
+.food-item .caption {
+  font-family: "permanent marker" , cursive;
+  margin-top: 8px;
+  font-size: 1rem;
+  color: #000; 
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+#blog p{
   line-height: 1.4;
   color:#000;
   padding: 10px;
 }
 
 #blog{
-  border-bottom: 8px dashed #ffa94f;
   padding-bottom: 30px;
 }
 
@@ -185,24 +223,61 @@ article.post time, article.post figcaption{
 }
 
 
-footer.primary{
-  display:block;
-  margin:0;
-  padding-top: 20px;
+footer.primary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position:relative;
+  gap: 15px;              /* spacing between items */
+  padding: 20px 0 20px 0;
   background-color: #000;
-  color:red;
+  color: red;
+  text-align: center;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='%23000' fill-opacity='0.91'%3E%3Cpath fill-rule='evenodd' d='M0 0h40v40H0V0zm40 40h40v40H40V40zm0-40h2l-2 2V0zm0 4l4-4h2l-6 6V4zm0 4l8-8h2L40 10V8zm0 4L52 0h2L40 14v-2zm0 4L56 0h2L40 18v-2zm0 4L60 0h2L40 22v-2zm0 4L64 0h2L40 26v-2zm0 4L68 0h2L40 30v-2zm0 4L72 0h2L40 34v-2zm0 4L76 0h2L40 38v-2zm0 4L80 0v2L42 40h-2zm4 0L80 4v2L46 40h-2zm4 0L80 8v2L50 40h-2zm4 0l28-28v2L54 40h-2zm4 0l24-24v2L58 40h-2zm4 0l20-20v2L62 40h-2zm4 0l16-16v2L66 40h-2zm4 0l12-12v2L70 40h-2zm4 0l8-8v2l-6 6h-2zm4 0l4-4v2l-2 2h-2z'/%3E%3C/g%3E%3C/svg%3E");
 }
-footer.primary a.social svg{
-  width:24px;
-  height:24px;
-  fill:blue
 
+/* Heading */
+footer.primary h3 {
+  margin: 0;
+  color: red;
+  font-size: 2rem;
 }
-footer.primary p{
-  color:red;
-  margin:0;
+
+/* Social icon link */
+footer.primary .social-row {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+  margin-top:10px;
 }
+
+footer.primary a.social:hover
+ {
+  transform: scale(1.15);
+}
+
+footer.primary a.social svg, 
+footer.primary a.social img {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+footer.primary a.social svg{
+  fill:blue;
+}
+
+footer.primary p {
+  position:absolute;
+  bottom: 15px;
+  left: 15px;
+  margin: 0;
+  color: red;
+  font-size: 1rem;
+}
+
 
 
 
