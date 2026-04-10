@@ -144,6 +144,7 @@ nav.primary ul li a:hover{
 }
 .subheader{
   color:#000;
+  font-size: 2rem;
   text-align:center;
   padding-bottom: 20px;
   border-bottom: 8px solid #000;
@@ -163,15 +164,15 @@ nav.primary ul li a:hover{
 }
 
 .food-item img {
-  width: 220px;
-  height: 160px;
+  width: 350px;
+  height: 200px;
   object-fit: cover;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.25);
 }
 
 .food-item .caption {
-  font-family: "permanent marker" , cursive;
+  font-family: "Permanent Marker" , cursive;
   margin-top: 8px;
   font-size: 1rem;
   color: #000; 
@@ -218,7 +219,7 @@ article.post time{
 }
 article.post time, article.post figcaption{
   text-transform: uppercase;
-  font-size: .8rem;
+  font-size: 1.2rem;
   text-align:center;
 }
 
