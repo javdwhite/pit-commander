@@ -305,6 +305,13 @@ footer.primary p {
   nav.primary a{
     display:block;
   }
+  .food-item img {
+  width: 175px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+}
   footer.primary p{
     left:10px;
     bottom: 0;
