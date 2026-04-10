@@ -304,4 +304,8 @@ footer.primary p {
   nav.primary a{
     display:block;
   }
+  footer.primary p{
+    left:0;
+    bottom: 0;
+  }
 }
